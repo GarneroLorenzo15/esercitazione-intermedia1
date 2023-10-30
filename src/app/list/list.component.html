@@ -1,0 +1,11 @@
+<h1>TheCocktaliDB</h1>
+
+
+<div class="drink-grid">
+    <div *ngFor="let drink of drinks" class="drink-card">
+      <img [src]="drink.strDrinkThumb" alt="{{ drink.strDrink }}" class="drink-image"/>
+      <h3>{{ drink.strDrink }}</h3>
+      <a [routerLink]="['detail', drink.idDrink]" class="detail-link">Vedi dettagli</a>
+    </div>
+</div>
+  
